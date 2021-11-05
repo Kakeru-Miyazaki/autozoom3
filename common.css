@@ -6,6 +6,11 @@ h1 {
   font-size: 300%;
 }
 
+body {
+  padding: 30px;
+  background: #78e5e5;
+}
+
 h1:before,
 h1:after {
   position: absolute;

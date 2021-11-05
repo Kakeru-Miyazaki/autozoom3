@@ -8,17 +8,68 @@
   </head>
   <body>
     <h1>AUTOZOOM3</h1>
-    <!-- <input type="text" id="inputDay" size="30" />
-     -->
     <h2>Day</h2>
-    <input type="radio" name="gender" value="Sun" />Sun
-    <input type="radio" name="gender" value="Mon" />Mon
-    <input type="radio" name="gender" value="Tue" />Tue
-    <input type="radio" name="gender" value="Wed" />Wed
-    <input type="radio" name="gender" value="Thu" />Thu
-    <input type="radio" name="gender" value="Fri" />Fri
-    <input type="radio" name="gender" value="Sat" />Sat
-    <br />
+    <fieldset>
+      <input
+        id="Sun"
+        class="radio-inline__input"
+        type="radio"
+        name="accessible-radio"
+        value="Sun"
+        checked="checked"
+      />
+      <label class="radio-inline__label" for="Sun"> Sun </label>
+      <input
+        id="Mon"
+        class="radio-inline__input"
+        type="radio"
+        name="accessible-radio"
+        value="Mon"
+      />
+      <label class="radio-inline__label" for="Mon"> Mon </label>
+      <input
+        id="Tue"
+        class="radio-inline__input"
+        type="radio"
+        name="accessible-radio"
+        value="Tue"
+      />
+      <label class="radio-inline__label" for="Tue"> Tue </label>
+      <input
+        id="Wed"
+        class="radio-inline__input"
+        type="radio"
+        name="accessible-radio"
+        value="Wed"
+        checked="checked"
+      />
+      <label class="radio-inline__label" for="Wed"> Wed </label>
+      <input
+        id="Thu"
+        class="radio-inline__input"
+        type="radio"
+        name="accessible-radio"
+        value="Thu"
+      />
+      <label class="radio-inline__label" for="Thu"> Tue </label>
+      <input
+        id="Fri"
+        class="radio-inline__input"
+        type="radio"
+        name="accessible-radio"
+        value="Fri"
+      />
+      <label class="radio-inline__label" for="Fri"> Fri </label>
+      <input
+        id="Sat"
+        class="radio-inline__input"
+        type="radio"
+        name="accessible-radio"
+        value="Sat"
+      />
+      <label class="radio-inline__label" for="Sat"> Sat </label>
+    </fieldset>
+
     <h2>Time</h2>
     <input type="time" name="example" />
     <h2>Name</h2>
@@ -35,12 +86,15 @@
       >Quit</a
     > -->
     <br />
-    <button class="btn btn-svg" id="buttonAdd">
+    <br />
+    <button class="btn btn-svg" id="buttonRegister">
       <svg>
         <rect x="2" y="2" rx="0" fill="none" width="200" height="50"></rect>
       </svg>
       <span>Register</span>
     </button>
+    <br />
+    <br />
     <a href="menu.html" class="btn btn-svg">
       <svg>
         <rect x="2" y="2" rx="0" fill="none" width="200" height="50"></rect>
@@ -48,7 +102,7 @@
       <span>Quit</span>
     </a>
   </body>
-  <!-- <script type="text/javascript" src="join.js"></script>
+  <!-- <script type="text/javascript" src="join.js"></script> -->
   <script type="text/javascript" src="add.js"></script>
-  <script type="text/javascript" src="del.js"></script> -->
+  <!-- <script type="text/javascript" src="del.js"></script> -->
 </html>
