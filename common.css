@@ -1,0 +1,30 @@
+h1 {
+  position: relative;
+  display: inline-block;
+  padding: 0 65px;
+  text-align: center;
+  font-size: 300%;
+}
+
+h1:before,
+h1:after {
+  position: absolute;
+  top: calc(50% - 3px);
+  width: 50px;
+  height: 6px;
+  content: "";
+  border-top: solid 2px #000;
+  border-bottom: solid 2px #000;
+}
+
+h1:before {
+  left: 0;
+}
+
+h1:after {
+  right: 0;
+}
+
+h2 {
+  font-size: 200%;
+}
