@@ -93,7 +93,7 @@ button.btn-svg span {
 
 body {
   /* font-family: "Open Sans", helvetica, arial, sans-serif; */
-  max-width: 305px;
+  /* max-width: 305px; */
   /* margin: 3rem auto 0; */
   line-height: 1.6;
   /* color: #444; */
@@ -143,4 +143,108 @@ p {
   outline-offset: -2px;
   outline-style: auto;
   outline-width: 5px;
+}
+
+.main {
+  display: flex;
+}
+/* .main > div {
+  width: 100%;
+} */
+.main,
+.main > div {
+  /* border: 1px solid #999; */
+  padding: 10px;
+}
+
+/* table */
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 0;
+  width: 650px;
+  table-layout: fixed;
+}
+
+table tr {
+  background-color: #e6f2f5;
+  padding: 0.35em;
+  border-bottom: 2px solid #fff;
+}
+table th,
+table td {
+  padding: 1em 10px 1em 1em;
+  border-right: 2px solid #fff;
+}
+table th {
+  font-size: 0.85em;
+}
+table thead tr {
+  background-color: #167f92;
+  color: #fff;
+}
+table tbody th {
+  background: #78bbc7;
+  color: #fff;
+}
+.txt {
+  text-align: left;
+  font-size: 0.85em;
+}
+.price {
+  text-align: right;
+  color: #167f92;
+  font-weight: bold;
+}
+.non {
+  background: #fff;
+}
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+    width: 80%;
+  }
+  table th {
+    background-color: #167f92;
+    display: block;
+    border-right: none;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  table td {
+    border-bottom: 1px solid #bbb;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+    position: relative;
+    /* padding: 0.625em 0.625em 0.625em 4em; */
+    border-right: none;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+    color: #167f92;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+  table tbody th {
+    color: #fff;
+  }
 }

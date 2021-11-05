@@ -1,0 +1,3 @@
+﻿Day,Time,Name,URL,Del
+Sun,10:15,hoge,https://google.com,'<input type="button" value="delete this data" id="coladd" onclick="coldel(this)">'
+Mon,9:15,fuga,https:yahoo.co.jp,'<input type="button" value="delete this data" id="coladd" onclick="coldel(this)">'

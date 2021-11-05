@@ -8,101 +8,155 @@
   </head>
   <body>
     <h1>AUTOZOOM3</h1>
-    <h2>Day</h2>
-    <fieldset>
-      <input
-        id="Sun"
-        class="radio-inline__input"
-        type="radio"
-        name="accessible-radio"
-        value="Sun"
-        checked="checked"
-      />
-      <label class="radio-inline__label" for="Sun"> Sun </label>
-      <input
-        id="Mon"
-        class="radio-inline__input"
-        type="radio"
-        name="accessible-radio"
-        value="Mon"
-      />
-      <label class="radio-inline__label" for="Mon"> Mon </label>
-      <input
-        id="Tue"
-        class="radio-inline__input"
-        type="radio"
-        name="accessible-radio"
-        value="Tue"
-      />
-      <label class="radio-inline__label" for="Tue"> Tue </label>
-      <input
-        id="Wed"
-        class="radio-inline__input"
-        type="radio"
-        name="accessible-radio"
-        value="Wed"
-        checked="checked"
-      />
-      <label class="radio-inline__label" for="Wed"> Wed </label>
-      <input
-        id="Thu"
-        class="radio-inline__input"
-        type="radio"
-        name="accessible-radio"
-        value="Thu"
-      />
-      <label class="radio-inline__label" for="Thu"> Tue </label>
-      <input
-        id="Fri"
-        class="radio-inline__input"
-        type="radio"
-        name="accessible-radio"
-        value="Fri"
-      />
-      <label class="radio-inline__label" for="Fri"> Fri </label>
-      <input
-        id="Sat"
-        class="radio-inline__input"
-        type="radio"
-        name="accessible-radio"
-        value="Sat"
-      />
-      <label class="radio-inline__label" for="Sat"> Sat </label>
-    </fieldset>
+    <div class="main">
+      <div>
+        <h2>Day</h2>
+        <fieldset>
+          <input
+            id="Sun"
+            class="radio-inline__input"
+            type="radio"
+            name="accessible-radio"
+            value="Sun"
+            checked="checked"
+            />
+          <label class="radio-inline__label" for="Sun"> Sun </label>
+          <input
+            id="Mon"
+            class="radio-inline__input"
+            type="radio"
+            name="accessible-radio"
+            value="Mon"
+            />
+          <label class="radio-inline__label" for="Mon"> Mon </label>
+          <input
+            id="Tue"
+            class="radio-inline__input"
+            type="radio"
+            name="accessible-radio"
+            value="Tue"
+            />
+          <label class="radio-inline__label" for="Tue"> Tue </label>
+          <input
+            id="Wed"
+            class="radio-inline__input"
+            type="radio"
+            name="accessible-radio"
+            value="Wed"
+            />
+          <label class="radio-inline__label" for="Wed"> Wed </label>
+          <input
+            id="Thu"
+            class="radio-inline__input"
+            type="radio"
+            name="accessible-radio"
+            value="Thu"
+            />
+          <label class="radio-inline__label" for="Thu"> Thu </label>
+          <input
+            id="Fri"
+            class="radio-inline__input"
+            type="radio"
+            name="accessible-radio"
+            value="Fri"
+            />
+          <label class="radio-inline__label" for="Fri"> Fri </label>
+          <input
+            id="Sat"
+            class="radio-inline__input"
+            type="radio"
+            name="accessible-radio"
+            value="Sat"
+            />
+          <label class="radio-inline__label" for="Sat"> Sat </label>
+        </fieldset>
 
-    <h2>Time</h2>
-    <input type="time" name="example" />
-    <h2>Name</h2>
-    <input type="text" id="inputName" size="30" />
-    <h2>URL</h2>
-    <input type="text" id="inputURL" size="30" /><br />
-    <!-- <button
-      id="buttonRegister"
-      class="btn btn-border-shadow btn-border-shadow--radius"
-    >
-      Register
-    </button>
-    <a href="menu.html" class="btn btn-border-shadow btn-border-shadow--radius"
-      >Quit</a
-    > -->
-    <br />
-    <br />
-    <button class="btn btn-svg" id="buttonRegister">
-      <svg>
-        <rect x="2" y="2" rx="0" fill="none" width="200" height="50"></rect>
-      </svg>
-      <span>Register</span>
-    </button>
-    <br />
-    <br />
-    <a href="menu.html" class="btn btn-svg">
-      <svg>
-        <rect x="2" y="2" rx="0" fill="none" width="200" height="50"></rect>
-      </svg>
-      <span>Quit</span>
-    </a>
-  </body>
-  <!-- <script type="text/javascript" src="join.js"></script> -->
+        <h2>Time</h2>
+        <input type="time" name="inputTime" id="inputTime"/>
+        <h2>Name</h2>
+        <input type="text" id="inputName" size="30" />
+        <h2>URL</h2>
+        <input type="text" id="inputURL" size="30" /><br />
+
+          <br>
+          <br>
+          <button class="btn btn-svg" id="buttonRegister" onclick="coladd()">
+            <svg>
+              <rect x="2" y="2" rx="0" fill="none" width="200" height="50"></rect>
+            </svg>
+            <span>Register</span>
+          </button>
+          <br />
+          <br />
+          <a href="menu.html" class="btn btn-svg">
+            <svg>
+              <rect x="2" y="2" rx="0" fill="none" width="200" height="50"></rect>
+            </svg>
+            <span>Quit</span>
+          </a>
+        </div>
+        
+        <div>
+        <span id="message">Please select "data.csv"</span>
+        <input id="csv_file" type="file">
+           <table id="table" border="1" class="table is-bordered">
+            <thead>
+            <tr>
+              <td>Day</td>
+              <td>Time</td>
+              <td>Name</td>
+              <td>URL</td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          </table>
+
+          <div class="container">
+            <div id="table" class="userTableBox">     
+          </div> 
+      </div>
+      <div id="color_list"></div>
+
+
+
+      <!-- <section class="section">
+
+        <h1 class="title">JavaScriptでCSVファイルを読み込んでテーブルに表示する</h1>
+    
+        <div class="columns">
+          <div class="column">
+            <article class="message is-primary">
+              <div class="message-body">
+                <span id="message">ファイルを選択してください。</span>
+              </div>
+            </article>
+          </div>
+        </div>
+    
+        <div class="columns">
+          <div class="column">
+            <input id="csv_file" type="file">
+          </div>
+        </div>
+    
+        <div class="columns">
+          <div class="column" style="overflow-y: scroll;">
+            <table id="csv_data_table" class="table is-bordered">
+              <thead>
+                <tr>
+                  <th>day</th>
+                  <th>time</th>
+                  <th>name</th>
+                  <th>url</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div> -->
+    
+      </section>
+  </body>  
   <script type="text/javascript" src="add.js"></script>
-  <!-- <script type="text/javascript" src="del.js"></script> -->
 </html>
