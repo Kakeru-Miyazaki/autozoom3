@@ -160,6 +160,7 @@ p {
 /* table */
 
 table {
+  font-size: 150%;
   border-collapse: collapse;
   margin: 0 auto;
   padding: 0;
