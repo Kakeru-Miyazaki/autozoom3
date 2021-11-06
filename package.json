@@ -44,7 +44,7 @@
     ],
     "mac":{
       "target": "dmg",
-      "icon":"icon.png"
+      "icon":"icon.icns"
     },
     "win":{
       "target": "nsis",
@@ -52,7 +52,7 @@
     },
     "linux":{
       "target":"deb",
-      "icon":"icon.png"
+      "icon":"icon.icns"
     },
     "nsis":{
       "oneClick": false,

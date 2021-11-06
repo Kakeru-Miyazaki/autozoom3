@@ -47,6 +47,9 @@ function coladd() {
 
     var setjson = JSON.stringify(obj);
     localStorage.setItem(createKey(newDay, newTime), setjson);
+    document.getElementById('inputTime').value = ""
+    document.getElementById('inputName').value = ""
+    document.getElementById('inputURL').value = ""
     return true;
   }
 
