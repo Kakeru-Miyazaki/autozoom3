@@ -23,7 +23,6 @@ function coladd() {
   } else {
     // 行を行末に追加
     var row = table.insertRow(-1);
-    //td分追加
     var cell1 = row.insertCell(-1);
     var cell2 = row.insertCell(-1);
     var cell3 = row.insertCell(-1);
@@ -35,7 +34,6 @@ function coladd() {
     cell3.innerHTML = newName;
     // cell4.innerHTML = newURL;
     cell5.innerHTML = '<input type="button" id="coladd" onclick="removeStorage(\'' + createKey(newDay, newTime) + '\')" value="delete">';
-    // $('table').html(table);
     var array = [];
     var obj = {
       'Day': newDay,
@@ -77,7 +75,6 @@ var saveStorage = function () {
 
 // 特定のキーと値を削除
 var removeStorage = function (key) {
-  //var key = document.getElementById("key").value;
   localStorage.removeItem(key);
   key = "";
   viewStorage();

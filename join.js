@@ -22,7 +22,6 @@ function setUrl() {
         t = keyTime
       }
     }
-    // console.log(keyTime)
   }
   let link = document.getElementById('joinMeeting');
   link.setAttribute('href', urlToJoin);

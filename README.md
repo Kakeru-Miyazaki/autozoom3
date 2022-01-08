@@ -58,6 +58,6 @@ Home 画面(ADD URL からは Quit を押すといけます)で Join the Meeting
 
 アプリ自体の便利さと，主要 OS の網羅性の高さと環境構築不要というところが個人的推しポイントです．
 
-バグ報告，意見，質問は GitHub 上または yasarikei@gmail.com までお願いします．
+バグ報告，意見，質問は GitHub 上または kake9205@gmail.com までお願いします．
 
 開発者 kakekakemiya
